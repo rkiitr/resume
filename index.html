@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Rohit Kumar | Back-end Developer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,102 +13,85 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
         .container {
             max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
+            margin: auto;
+            overflow: hidden;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        section {
-            margin-bottom: 20px;
+        h1, h2, h3 {
+            color: #222;
         }
-        h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
+        .contact-info a {
+            color: #0073b1;
+            text-decoration: none;
         }
-        ul {
+        .skills, .languages {
             list-style: none;
             padding: 0;
         }
-        ul li {
-            margin-bottom: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .skills li, .languages li {
+            background: #0073b1;
+            color: white;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>My Resume</h1>
-    </header>
     <div class="container">
-        <section>
-            <h2>About Me</h2>
-            <p>Hello! I am Rohit Kumar, an Assistant Engineer. I am passionate about Coding and Developing.</p>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <strong>Job Title 1</strong> at <strong>Company Name</strong> <br>
-                    <em>Start Date - End Date</em> <br>
-                    Description of responsibilities and achievements.
-                </li>
-                <li>
-                    <strong>Job Title 2</strong> at <strong>Company Name</strong> <br>
-                    <em>Start Date - End Date</em> <br>
-                    Description of responsibilities and achievements.
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>Degree</strong> from <strong>Institution Name</strong> <br>
-                    <em>Start Date - End Date</em>
-                </li>
-                <li>
-                    <strong>Certification</strong> from <strong>Institution Name</strong> <br>
-                    <em>Year</em>
-                </li>
-            </ul>
-        </section>
-        <section>
+        <header>
+            <h1>Rohit Kumar</h1>
+            <h3>Back-end Developer at BridgeImpact</h3>
+            <p>Based in Delhi, India</p>
+        </header>
+
+        <section class="contact-info">
             <h2>Contact</h2>
-            <p>Email: rohitkriitr@gmail.com</p>
-            <p>Phone: 8840626614</p>
-            <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></p>
+            <p>Email: <a href="mailto:rohitkriitr@gmail.com">rohitkriitr@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/rohit-kumar-001b21a3">linkedin.com/in/rohit-kumar-001b21a3</a></p>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <h3>Bridge Impact</h3>
+            <p><strong>Role:</strong> Back-end Developer</p>
+            <p><strong>Duration:</strong> June 2017 - June 2018 (1 year 1 month)</p>
+            <p><strong>Location:</strong> New Delhi Area, India</p>
+
+            <h3>GO-BIO Retail</h3>
+            <p><strong>Role:</strong> GO-BIOexplorer</p>
+            <p><strong>Duration:</strong> June 2016 - July 2016 (2 months)</p>
+            <p><strong>Location:</strong> New Delhi Area, India</p>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <h3>Indian Institute of Technology, Roorkee</h3>
+            <p><strong>Degree:</strong> Bachelor of Technology (B.Tech.)</p>
+            <p><strong>Field of Study:</strong> Computer Science</p>
+            <p><strong>Duration:</strong> 2013 - 2017</p>
+        </section>
+
+        <section class="skills">
+            <h2>Top Skills</h2>
+            <ul>
+                <li>C++</li>
+                <li>Microsoft Office</li>
+                <li>HTML</li>
+            </ul>
+        </section>
+
+        <section class="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>Hindi</li>
+                <li>English</li>
+            </ul>
         </section>
     </div>
-    <footer>
-        &copy; 2024 Rohit Kumar. All rights reserved.
-    </footer>
 </body>
 </html>
