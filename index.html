@@ -6,56 +6,108 @@
     <title>Rohit Kumar | Back-end Developer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #0073b1, #005582);
+            color: #fff;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        header p {
+            font-size: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1f1f1f;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #0073b1;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
-            overflow: hidden;
             padding: 20px;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        h1, h2, h3 {
-            color: #222;
+        h2 {
+            border-bottom: 2px solid #0073b1;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
-        .contact-info a {
-            color: #0073b1;
-            text-decoration: none;
+        .contact-info, .experience, .education, .skills, .languages {
+            margin-bottom: 30px;
         }
-        .skills, .languages {
+        .skills ul, .languages ul {
+            display: flex;
+            flex-wrap: wrap;
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         .skills li, .languages li {
             background: #0073b1;
             color: white;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
+            margin: 5px;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            color: #ffffff;
+        }
+        footer a {
+            color: #0073b1;
+            text-decoration: none;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Rohit Kumar</h1>
-            <h3>Back-end Developer at BridgeImpact</h3>
-            <p>Based in Delhi, India</p>
-        </header>
+    <header>
+        <h1>Rohit Kumar</h1>
+        <h3>Back-end Developer at BridgeImpact</h3>
+        <p>Based in Delhi, India</p>
+    </header>
 
-        <section class="contact-info">
+    <nav>
+        <a href="#contact">Contact</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#languages">Languages</a>
+    </nav>
+
+    <div class="container">
+        <section id="contact" class="contact-info">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:rohitkriitr@gmail.com">rohitkriitr@gmail.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/rohit-kumar-001b21a3">linkedin.com/in/rohit-kumar-001b21a3</a></p>
         </section>
 
-        <section class="experience">
+        <section id="experience" class="experience">
             <h2>Experience</h2>
             <h3>Bridge Impact</h3>
             <p><strong>Role:</strong> Back-end Developer</p>
@@ -68,7 +120,7 @@
             <p><strong>Location:</strong> New Delhi Area, India</p>
         </section>
 
-        <section class="education">
+        <section id="education" class="education">
             <h2>Education</h2>
             <h3>Indian Institute of Technology, Roorkee</h3>
             <p><strong>Degree:</strong> Bachelor of Technology (B.Tech.)</p>
@@ -76,7 +128,7 @@
             <p><strong>Duration:</strong> 2013 - 2017</p>
         </section>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2>Top Skills</h2>
             <ul>
                 <li>C++</li>
@@ -85,7 +137,7 @@
             </ul>
         </section>
 
-        <section class="languages">
+        <section id="languages" class="languages">
             <h2>Languages</h2>
             <ul>
                 <li>Hindi</li>
@@ -93,5 +145,9 @@
             </ul>
         </section>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Rohit Kumar. Built with <a href="https://jakesinclair.ca/">Inspiration</a>.</p>
+    </footer>
 </body>
 </html>
